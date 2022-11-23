@@ -1,0 +1,47 @@
+.heading__button {
+    border: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    min-width: 200px;
+    min-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-top: 30px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background-color: var(--brand-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.heading__button:hover,
+.heading__button:focus {
+    /* color: var(--white);
+    background-color: var(--brand-color); */
+    transition: 250ms var(--cubic-bezier);
+}
+
+.heading {
+    background-color: var(--gray);
+    color: var(--white);
+    height: 600px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 200px;
+    background-image: linear-gradient(rgb(47, 48, 58, 0.6), rgb(47, 48, 58, 0.6)), url('./../images/team-background.jpg');
+    background-size: cover;
+}
+
+.heading__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    align-items: center;
+    margin: 0 auto;
+    width: 696px;
+    height: 120px;
+}
