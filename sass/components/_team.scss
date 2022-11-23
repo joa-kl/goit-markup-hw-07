@@ -45,14 +45,15 @@
     height: 44px;
     padding: 12px;
     fill: #AFB1B8;
-}
 
-.menu__team-card--icon-box:hover {
-    fill: var(--white);
-    background-color: var(--brand-color);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 250ms var(--cubic-bezier);
+    &:hover {
+        fill: var(--white);
+        background-color: var(--brand-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 250ms var(--cubic-bezier);
+
+    }
 }
 
 .menu__team-card--icon-sm {

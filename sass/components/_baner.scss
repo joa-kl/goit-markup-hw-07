@@ -13,13 +13,11 @@
     background-color: var(--brand-color);
     color: var(--white);
     cursor: pointer;
-}
 
-.heading__button:hover,
-.heading__button:focus {
-    /* color: var(--white);
-    background-color: var(--brand-color); */
-    transition: 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus {
+        transition: 250ms var(--cubic-bezier);
+    }
 }
 
 .heading {

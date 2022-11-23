@@ -22,11 +22,11 @@
     border-radius: 4px;
     padding: 0px 22px;
     cursor: pointer;
-}
 
-.buttons__btn:hover,
-.buttons__btn:focus {
-    color: var(--white);
-    background-color: var(--brand-color);
-    transition: 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus {
+        color: var(--white);
+        background-color: var(--brand-color);
+        transition: 250ms var(--cubic-bezier);
+    }
 }

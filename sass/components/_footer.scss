@@ -61,12 +61,12 @@
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-}
 
-.footersection_contactdetails:hover,
-.footersection_contactdetails:focus {
-    color: var(--brand-color);
-    transition: 250ms var(--cubic-bezier);
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+        transition: 250ms var(--cubic-bezier);
+    }
 }
 
 h3 {
@@ -93,14 +93,14 @@ h3 {
     padding: 12px;
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 50%;
-}
 
-.footersection__sm--icon:hover {
-    color: var(--white);
-    background-color: var(--brand-color);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 250ms var(--cubic-bezier);
+    &:hover {
+        color: var(--white);
+        background-color: var(--brand-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 250ms var(--cubic-bezier);
+    }
 }
 
 .footersection__icon {

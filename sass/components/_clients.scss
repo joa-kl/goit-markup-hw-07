@@ -9,6 +9,8 @@
     padding: 8px 7px;
 }
 
+
+
 .section__clients--box {
     align-content: center;
     justify-content: center;
@@ -18,13 +20,13 @@
     height: 92px;
     padding: 16px 32px;
     color: #afb1b8;
-}
 
-.section__clients--box:hover {
+    &:hover {
     fill: var(--brand-color);
     cursor: pointer;
     border-color: var(--brand-color);
     transition: 250ms var(--cubic-bezier);
+    }
 }
 
 .section__clients--icon {

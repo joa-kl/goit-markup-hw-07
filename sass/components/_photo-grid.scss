@@ -8,11 +8,11 @@
 .card {
     max-width: 370px;
     max-height: 404px;
-}
 
-.card:hover {
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+    &:hover {
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
 }
 
 .card__box {
