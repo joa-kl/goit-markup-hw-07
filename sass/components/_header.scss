@@ -5,111 +5,111 @@
     display: flex;
     height: 80px;
     border-bottom: 0.5px solid #ebe9e9;
-}
 
-.header__logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    width: 145px;
-    height: 31px;
-}
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        width: 145px;
+        height: 31px;
+    }
 
-.header__logo--front {
-    color: var(--brand-color);
-}
-
-.header__logo--end {
-    color: var(--black);
-}
-
-.header__link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    text-decoration: none;
-    color: var(--black);
-    letter-spacing: 0.02em;
-    position: relative;
-
-    &:hover,
-    &:focus {
+    &__logo--front {
         color: var(--brand-color);
+    }
+
+    &__logo--end {
+        color: var(--black);
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        text-decoration: none;
+        color: var(--black);
+        letter-spacing: 0.02em;
+        position: relative;
+        
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+            transition: 250ms var(--cubic-bezier);
+        }
+        &:hover::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 4px;
+            background-color: var(--brand-color);
+            display: block;
+            transform: translateY(27px);
+            border-radius: 2px;
+        }
+    }
+
+    &__contact--style {
+        color: var(--light-gray);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.1;
+        
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+            transition: 250ms var(--cubic-bezier);
+        }
+        
+        &::before {
+            margin-right: 10px;
+            content: '';
+        }
+        
+        &:hover::before {
+        fill: var(--brand-color);
         transition: 250ms var(--cubic-bezier);
-}
-    &:hover::after {
-        content: "";
-        position: absolute;
-        width: 110%;
-        height: 4px;
-        background-color: var(--brand-color);
-        display: block;
-        transform: translateY(27px);
-        border-radius: 2px;
+        }
     }
-}
-
-.header__contact--style {
-    color: var(--light-gray);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.1;
-
-    &:hover,
-    &:focus {
-        color: var(--brand-color);
-        transition: 250ms var(--cubic-bezier);
+    
+    &__container{
+        width: 1200px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 15px;
+        display: flex;
     }
 
-    &::before {
-        margin-right: 10px;
-        content: '';
+    &__container--logo-and-nav {
+        justify-content: flex-start;
+        display: flex;
+        gap: 93px;
+        align-items: center;
     }
 
-    &:hover::before {
-    fill: var(--brand-color);
-    transition: 250ms var(--cubic-bezier);
+    &__nav {
+        justify-content: space-between;
+        align-items: center;
+        width: 254px;
+        height: 16px;
+        margin-left: 0 auto;
+    }
+  
+    &__contact {
+        justify-content: space-between;
+        align-items: center;
+        height: 16px;
+        display: flex;
+        font-weight: bold;
     }
 }
 
 .header__contact--email:hover,
 .header__contact--phone:hover {
     fill: var(--brand-color);
-}
-
-.header__container {
-    width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px;
-    display: flex;
-}
-
-.header__container--logo-and-nav {
-    justify-content: flex-start;
-    display: flex;
-    gap: 93px;
-    align-items: center;
-}
-
-.header__nav {
-    justify-content: space-between;
-    align-items: center;
-    width: 254px;
-    height: 16px;
-    margin-left: 0 auto;
-}
-
-.header__contact {
-    justify-content: space-between;
-    align-items: center;
-    height: 16px;
-    display: flex;
-    font-weight: bold;
 }

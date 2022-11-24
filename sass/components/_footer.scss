@@ -3,71 +3,157 @@
     /* width: 1600px; */
     height: 252px;
     padding-top: 60px;
-}
 
-.footersection__container {
-    width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    align-items: center;
-    padding: 0px 15px;
-    display: flex;
-}
+    &__container {
+        width: 1200px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0px 15px;
+        display: flex;
+    }
 
-.footersection__contact {
-    margin-right: 70px;
-}
+    &__contact {
+        margin-right: 70px;
+    }
 
-.footersection__logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    width: 145px;
-    height: 31px;
-}
-
-.footersection__logo--front {
-    color: var(--brand-color);
-}
-
-.footersection__logo--end {
-    color: var(--white);
-}
-
-.footersection__address {
-    color: var(--white);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
-    margin-bottom: 9px;
-    margin-top: 20px;
-}
-
-.footersection__menu {
-    list-style: none;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    gap: 30px;
-}
-
-.footersection_contactdetails {
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        width: 145px;
+        height: 31px;
+    }
+    
+    &__logo--front {
         color: var(--brand-color);
-        transition: 250ms var(--cubic-bezier);
+    }
+
+    &__logo--end {
+        color: var(--white);
+    }
+
+    &__address {
+        color: var(--white);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+        margin-bottom: 9px;
+        margin-top: 20px;
+    }
+    
+    &__menu {
+        list-style: none;
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        gap: 30px;
+    }
+
+    &__newsletter {
+        display: flex;
+    }
+
+    &_contactdetails {
+        font-size: 14px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        
+        &:hover,
+        &:focus {
+            color: var(--brand-color);
+            transition: 250ms var(--cubic-bezier);
+        }
+    }
+
+    &__sm {
+        display: flex;
+        justify-content: space-between;
+        width: 206px;
+        height: 56px;
+        margin: 0 auto;
+        
+        &--icon {
+            width: 44px;
+            height: 44px;
+            padding: 12px;
+            background-color: rgb(255, 255, 255, 0.1);
+            border-radius: 50%;
+            
+            &:hover {
+                color: var(--white);
+                background-color: var(--brand-color);
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 250ms var(--cubic-bezier);
+            }
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--white);
+    }
+
+    &__form {
+        display: block;
+        width: 570px;
+        height: 86px;
+        margin-top: -40px;
+        margin-left: 78px;
+        
+        &--label {
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        &--input {
+            width: calc(100% - 210px);
+            border-radius: 4px;
+            background-color: transparent;
+            border: 1px solid var(--light-gray);
+            padding-left: 16px;
+            height: 50px;
+            margin-top: 20px;
+            margin-right: 12px;
+            color: var(--light-gray);
+            outline: 0;
+        }
+        
+        &--button {
+            width: 200px;
+            height: 50px;
+            border-radius: 4px;
+            border: 0;
+            background-color: var(--brand-color);
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.9;
+            letter-spacing: 0.06em;
+            padding-left: 42px;
+            text-align: left;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        
+        &--icon {
+            fill: var(--white);
+            margin-left: -50px;
+            margin-top: 33px;
+        }
     }
 }
+
 
 h3 {
     margin-top: -20px;
@@ -79,91 +165,7 @@ h3 {
     color: #FFFFFF;
 }
 
-.footersection__sm {
-    display: flex;
-    justify-content: space-between;
-    width: 206px;
-    height: 56px;
-    margin: 0 auto;
-}
-
-.footersection__sm--icon {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    background-color: rgb(255, 255, 255, 0.1);
-    border-radius: 50%;
-
-    &:hover {
-        color: var(--white);
-        background-color: var(--brand-color);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 250ms var(--cubic-bezier);
-    }
-}
-
-.footersection__icon {
-    width: 20px;
-    height: 20px;
-    fill: var(--white);
-}
-
-.footersection__form {
-    display: block;
-    width: 570px;
-    height: 86px;
-    margin-top: -40px;
-    margin-left: 78px;
-}
-
-.footersection__form--label {
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.footersection__form--input {
-    width: calc(100% - 210px);
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid var(--light-gray);
-    padding-left: 16px;
-    height: 50px;
-    margin-top: 20px;
-    margin-right: 12px;
-    color: var(--light-gray);
-    outline: 0;
-}
-
-.footersection__form--button {
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    border: 0;
-    background-color: var(--brand-color);
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    padding-left: 42px;
-    text-align: left;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-.footersection__form--icon {
-    fill: var(--white);
-    margin-left: -50px;
-    margin-top: 33px;
-}
-
 .footer-sm {
     display: block;
 }
 
-.footersection__newsletter {
-    display: flex;
-}

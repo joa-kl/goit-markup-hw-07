@@ -9,24 +9,25 @@
     padding: 0px;
     margin-bottom: 34px;
     list-style: none;
-}
-
-.buttons__btn {
-    border: 0;
-    letter-spacing: 0.03em;
-    font-size: 16px;
-    font-weight: 500;
-    Height: 38px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    border-radius: 4px;
-    padding: 0px 22px;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        color: var(--white);
-        background-color: var(--brand-color);
-        transition: 250ms var(--cubic-bezier);
+    
+    &__btn {
+        border: 0;
+        letter-spacing: 0.03em;
+        font-size: 16px;
+        font-weight: 500;
+        Height: 38px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        border-radius: 4px;
+        padding: 0px 22px;
+        cursor: pointer;
+        
+        &:hover,
+        &:focus {
+            color: var(--white);
+            background-color: var(--brand-color);
+            transition: 250ms var(--cubic-bezier);
+        }
+        
     }
 }
